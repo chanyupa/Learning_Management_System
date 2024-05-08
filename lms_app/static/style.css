@@ -1,0 +1,218 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/search.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/profile.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/bell.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/readme.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/read.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/insights.css');
+
+body{
+    overflow-x: hidden;
+}
+
+.icons:hover{
+    color: #ed4d5d;
+}
+.nevbar a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    position: relative;
+    top: 9px;
+}
+
+.nevbar{
+    width: 19.8%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    
+}
+
+
+.top-search{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+.search{
+    height: 30px;
+    width: 260px;
+}
+.top-search .botton{
+    position: absolute;
+    left: 250px;
+    height: 36px;
+    width: 36px;
+}
+
+.top{
+    width: 1300px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: 270px;
+}
+
+.left-top div{
+    width: 220px;
+    height: 130px;
+    background: white;
+    position: absolute;
+    left: 290px;
+    top: 120px;
+    border-radius: 5px;
+}
+
+.left .left-middle1{
+    position: absolute;
+    left: 560px;
+    top: 120px;
+}
+
+.left .left-middle2{
+    position: absolute;
+    left: 830px;
+    top: 120px;
+}
+
+.left .left-left{
+    position: absolute;
+    left: 1100px;
+    top: 120px;
+}
+
+.left-top div h2{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-size: 200%;
+    z-index: +1;
+}
+
+.left-top div p{
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    z-index: +1;
+}
+
+.left-bottom .left-right{
+    width: 700px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    left: 290px;
+    top: 290px;
+    border-radius: 5px;
+}
+
+.left-bottom .left-left{
+    width: 280px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    top: 290px;
+    left: 1040px;
+    border-radius: 5px;
+}
+
+.left-bottom h2{
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    padding: 20px 0px;
+    position: absolute;
+    top: -30px;
+    border-bottom: 1px solid gray;
+}
+
+.gg-profile{
+    position: absolute;
+    top: 30px;
+    left: 950px;
+}
+
+.gg-bell{
+    position: absolute;
+    top: 10px;
+    left: 850px;
+}
+
+.left-right .gg-readme{
+    position: absolute;
+    top: 40px;
+    left: 130px;
+}
+
+i{
+    position: absolute;
+    left: 50px;
+
+}
+.icons{
+    width: 100px;
+    height: 400px;
+    background: transparent;
+    position: absolute;
+    top: 165px;
+}
+.icon1{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.icon3{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 120px;
+}
+.icon4{
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.gg-read{
+    position: absolute;
+    top: -10px;
+}
+
+.gg-search{
+    position: relative;
+    left: 5px;
+}
+
+.nev1 h2:hover{
+    background: white;
+    color: #ed4d5d;
+}
+
+.nev h2:hover{
+    color: #ed4d5d;
+    background: white;
+}
+.nev h2{
+    padding: 10px 0px;
+    position: relative;
+    left: 0px;
+}
+
+.nev1 h2{
+    padding: 10px 0px;
+}
+
+
+.icons i:hover{
+    color: #ed4d5d;
+}
+
+.gg-insights{
+    position: relative;
+    top: 10px;
+}

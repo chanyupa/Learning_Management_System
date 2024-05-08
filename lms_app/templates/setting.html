@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/bell.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/readme.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/read.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/insights.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/danger.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+</head>
+<body style="background-color: #efefee;">
+    <div class="nevbar" style="background-color: #ed4d5d;">
+        <h1>Brand</h1>
+        <div  class="nev1"><a href="{% url 'dashboard' %}"><h2>Dashboard</h2></a></div>
+        <div class="nev1"><a href="{% url 'student' %}"><h2>Students</h2></a></div>
+        <div class="nev1"><a href="{% url 'teacher' %}"><h2>Teachers</h2></a></dv>
+        <div class="nev"><a href="{% url 'school' %}"><h2>School</h2></a></div>                
+        <div class="nev"><a href="{% url 'income' %}"><h2>Income</h2></a></div>
+        <div class="nev"><a href="{% url 'help' %}"><h2>Help</h2></a></div>
+        <div class="nev"><a href="{% url 'setting' %}"><h2 style="background: white; color: #ed4d5d;">Setting</h2></a></div>
+    </div>
+    <div class="top">
+        <div class="top-search">
+            <input class="search" type="text" placeholder="search">
+            <button type="submit" class="botton"><i class="gg-search"></i></button>
+        </div>
+        <i class="gg-profile"></i><i class="gg-bell"></i>
+    </div>
+    <div class="left">
+        <div class="left-top">
+            <div class="left-right">
+                <h2 class="sn">2194</h2>
+                <p>Students</p>
+                <img class="icon1" src="{% static "img/icon1.png" %}" alt="icon1">
+            </div>
+            <div class="left-middle1">
+                <h2>53</h2>
+                <p>Teachers</p>
+                <img class="icon1" src="{% static "img/icon2.png" %}" alt="icon2">
+            </div>
+            <div class="left-middle2">
+                <h2>5</h2>
+                <p>Schools</p>
+                <img class="icon3" src="{% static "img/icon3.png" %}" alt="icon3">
+            </div>
+            <div class="left-left">
+                <h2 class="in">350000</h2>
+                <p>Income</p>
+                <img class="icon4" src="{% static "img/icon4.png" %}" alt="icon4">
+            </div>
+            </div>
+        </div>
+        <div class="left-bottom">
+            <div class="left-right">
+                <h2>Recent Payments</h2>
+            </div>
+            <div class="left-left">
+                <h2>New Students</h2>
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <i class="gg-readme" style="color: white;"></i><br><br><br><br>
+        <i class="gg-read" style="color: white;"></i><br><br><br>
+        <i class="gg-home-alt" style="color: white;"></i><br><br>
+        <i class="gg-insights" style="color: white;"></i><br><br><br>
+        <i class="gg-danger" style="color: white;"></i><br><br><br>
+        <i class="gg-ghost" style="color: white;"></i>
+    </div>
+</body>
+</html>

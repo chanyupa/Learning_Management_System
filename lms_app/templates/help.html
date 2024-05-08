@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/bell.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/readme.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/read.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/insights.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/danger.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+</head>
+<body style="background-color: #efefee;">
+    
+    <div class="nevbar" style="background-color: #ed4d5d;">
+        <h1>Brand</h1>
+        <div  class="nev1"><a href="{% url 'dashboard' %}"><h2>Dashboard</h2></a></div>
+        <div class="nev1"><a href="{% url 'student' %}"><h2>Students</h2></a></div>
+        <div class="nev1"><a href="{% url 'teacher' %}"><h2>Teachers</h2></a></dv>
+        <div class="nev"><a href="{% url 'school' %}"><h2>School</h2></a></div>                
+        <div class="nev"><a href="{% url 'income' %}"><h2>Income</h2></a></div>
+        <div class="nev"><a href="{% url 'help' %}"><h2 style="background: white; color: #ed4d5d;">Help</h2></a></div>
+        <div class="nev"><a href="{% url 'setting' %}"><h2>Setting</h2></a></div>
+    </div>
+    <div class="top">
+        <div class="top-search">
+            <input class="search" type="text" placeholder="search">
+            <button type="submit" class="botton"><i class="gg-search"></i></button>
+        </div>
+        <i class="gg-profile"></i><i class="gg-bell"></i>
+    </div>
+    <div style="background: blue; width: 1000px; height: 470px; position: absolute; top: 120px; left: 318px; border-radius: 50px">
+        <h1 style="color: white;">Benifits of FAQ pages</h1>
+        <div style="background: white; width: 800px; height: 400px;position: relative; left: 95px; top: -25px;">
+            <div style="width:50px; height: 50px; border-radius: 50px; background: blue;position: absolute; top: 20px; left: 100px"><div class="star"><h2 style="width: 400px; position: relative; left: 80px; top: -10px">Create a positive customer experience</h2></div></div>
+            <div style="width:50px; height: 50px; border-radius: 50px; background: blue;position: absolute; top: 100px; left: 100px"><div class="star"><h2 style="width: 400px; position: relative; left: 80px; top: -10px">Moves prospects down the sale funnel</h2></div></div>
+            <div style="width:50px; height: 50px; border-radius: 50px; background: blue;position: absolute; top: 180px; left: 100px"><div class="star"><h2 style="width: 400px; position: relative; left: 80px; top: -25px">Proactively address customer complaints <br> and concerns</h2></div></div>
+            <div style="width:50px; height: 50px; border-radius: 50px; background: blue;position: absolute; top: 260px; left: 100px"><div class="star"><h2 style="width: 400px; position: relative; left: 80px; top: -15px;">Can help you rank for long-tail keywords</h2></div></div>
+            <div style="width:50px; height: 50px; border-radius: 50px; background: blue;position: absolute; top: 340px; left: 100px"><div class="star"><h2 style="width: 400px; position: relative; left: 80px; top: -15px">Freea up customer support and sales <br> teams</h2></div></div>
+        </div>
+    </div>
+    <div class="icons">
+        <i class="gg-readme" style="color: white;"></i><br><br><br><br>
+        <i class="gg-read" style="color: white;"></i><br><br><br>
+        <i class="gg-home-alt" style="color: white;"></i><br><br>
+        <i class="gg-insights" style="color: white;"></i><br><br><br>
+        <i class="gg-danger" style="color: #ed4d5d;;"></i><br><br><br>
+        <i class="gg-ghost" style="color: white;"></i>
+    </div>
+</body>
+</html>

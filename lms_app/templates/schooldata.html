@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form style="position: absolute; top: 100px; left: 180px; background: #ed4d5d; width: 1000px; height: 450px; text-align: center;" action="{% url 'school_data' %}" method="post">
+        {% csrf_token %}
+        <h1 style="color: white; position: relative; top: -30px; font-size: 300%;">Schools</h1>
+        <label style="font-size: 50px;position: absolute;top: 50px;left: 50px; color: white; " for="name">Name:</label>
+        <input style="height: 30px;position: absolute;top: 65px;left: 200px;width: 250px;" type="text" name="name" id="name" class="name">
+        <br><br><br>
+        <label style="font-size: 50px;position: absolute;top: 135px;left: 50px; color: white;" for="region">Region:</label>
+        <input style="height: 30px;position: absolute;top: 150px;left: 200px;width: 250px;" type="text" name="region" id="region" class="region">
+        <br><br><br>
+        <label style="font-size: 50px;position: absolute;top: 225px;left: 50px; color: white;" for="city">City:</label>
+        <input style="height: 30px;position: absolute;top: 235px;left: 200px;width: 250px;" type="text" name="city" id="city" class="city">
+        <br><br><br>
+        <label style="font-size: 40px;position: absolute;top: 60px;left: 490px; color: white;" for="students">Students:</label>
+        <input style="height: 30px;position: absolute;top: 65px;left: 690px;width: 250px;" type="text" name="students" id="students" class="students">
+        <br><br><br>
+        <label style="font-size: 50px;position: absolute;top: 135px;left: 490px; color: white;" for="teachers">Teachers:</label>
+        <input style="height: 30px;position: absolute;top: 150px;left: 690px;width: 250px;" type="text" name="teachers" id="teachers" class="teachers">
+        <br><br><br>
+        <label style="font-size: 40px;position: absolute;top: 230px;left: 490px; color: white;" for="classrooms">Classrooms:</label>
+        <input style="height: 30px;position: absolute;top: 235px;left: 690px;width: 250px;" type="text" name="classrooms" id="classrooms" class="classrooms">
+        <br><br><br>
+        <input type="submit" value="Add" style="width: 200px; font-size: 40px;position: absolute; top: 330px; left: 400px; background: #ed4d5d; color: white;">
+    </form>
+</body>
+</html>

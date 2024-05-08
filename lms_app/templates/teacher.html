@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/bell.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/readme.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/read.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home-alt.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/insights.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/danger.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/ghost.css' rel='stylesheet'>
+</head>
+<body style="background-color: #efefee;">
+    <div class="nevbar" style="background-color: #ed4d5d;">
+        <h1>Brand</h1>
+        <div  class="nev1"><a href="{% url 'dashboard' %}"><h2>Dashboard</h2></a></div>
+        <div class="nev1"><a href="{% url 'student' %}"><h2>Students</h2></a></div>
+        <div class="nev1"><a href="{% url 'teacher' %}"><h2 style="background: white; color: #ed4d5d;">Teachers</h2></a></dv>
+        <div class="nev"><a href="{% url 'school' %}"><h2>School</h2></a></div>                
+        <div class="nev"><a href="{% url 'income' %}"><h2>Income</h2></a></div>
+        <div class="nev"><a href="{% url 'help' %}"><h2>Help</h2></a></div>
+        <div class="nev"><a href="{% url 'setting' %}"><h2>Setting</h2></a></div>
+    </div>
+    <div class="top">
+        <div class="top-search">
+            <input class="search" type="text" placeholder="search">
+            <button type="submit" class="botton"><i class="gg-search"></i></button>
+        </div>
+        <i class="gg-profile"></i><i class="gg-bell"></i>
+    </div>
+    <form style="position: absolute; top: 130px; left: 315px; background: #ed4d5d; width: 1000px; height: 450px;" action="{% url 'teacher_data' %}" method="post">
+        {% csrf_token %}
+        <h1 style="color: white; position: relative; top: -30px; font-size: 300%;">New Teacher</h1>
+        <label style="font-size: 50px;position: absolute;top: 50px;left: 50px; color: white; " for="name">Name:</label>
+        <input style="height: 30px;position: absolute;top: 65px;left: 200px;width: 250px;" type="text" name="name" id="name" class="name">
+        <br><br><br>
+        <label style="font-size: 50px;position: absolute;top: 135px;left: 50px; color: white;" for="age">Age:</label>
+        <input style="height: 30px;position: absolute;top: 150px;left: 200px;width: 250px;" type="text" name="age" id="age" class="age">
+        <br><br><br>
+        <label style="font-size: 50px;position: absolute;top: 225px;left: 50px; color: white;" for="email">Email:</label>
+        <input style="height: 30px;position: absolute;top: 235px;left: 200px;width: 250px;" type="text" name="email" id="email" class="email">
+        <br><br><br>
+        <label style="font-size: 40px;position: absolute;top: 60px;left: 490px; color: white;" for="phonenumber">Ph Number:</label>
+        <input style="height: 30px;position: absolute;top: 65px;left: 690px;width: 250px;" type="text" name="phonenumber" id="phonenumber" class="customer">
+        <br><br><br>
+        <label style="font-size: 50px;position: absolute;top: 135px;left: 490px; color: white;" for="gender">Gender:</label>
+        <input style="height: 30px;position: absolute;top: 150px;left: 690px;width: 250px;" type="text" name="gender" id="gender" class="gender">
+        <br><br><br>
+        <label style="font-size: 40px;position: absolute;top: 230px;left: 490px; color: white;" for="classroom">Classroom:</label>
+        <input style="height: 30px;position: absolute;top: 235px;left: 690px;width: 250px;" type="text" name="classroom" id="classroom" class="classroom">
+        <br><br><br>
+        <input type="submit" value="Add" style="width: 200px; font-size: 40px;position: absolute; top: 330px; left: 400px; background: #ed4d5d; color: white;">
+    </form>
+    <div class="icons">
+        <i class="gg-readme" style="color: white;"></i><br><br><br><br>
+        <i class="gg-read" style="color: white;"></i><br><br><br>
+        <i class="gg-home-alt" style="color: #ed4d5d;"></i><br><br>
+        <i class="gg-insights" style="color: white;"></i><br><br><br>
+        <i class="gg-danger" style="color: white;"></i><br><br><br>
+        <i class="gg-ghost" style="color: white;"></i>
+    </div>
+</body>
+</html>

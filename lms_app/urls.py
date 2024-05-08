@@ -1,0 +1,31 @@
+from django.urls import path
+from lms_app import views
+
+urlpatterns = [
+    path('dashboard/', views.dashboard, name="dashboard"),
+    path('student/', views.student, name="student"),
+    path('teacher/', views.teacher, name="teacher"),
+    path('school/', views.school, name="school"),
+    path('income/', views.income, name="income"),
+    path('help/', views.help, name="help"),
+    path('setting/', views.setting, name="setting"),
+    path('create_student/', views.create_student, name="create_student"),
+    path('student_data/', views.student_data, name="student_data"),
+    path('studentdata/', views.studentdata, name="studentdata"),
+    path('teacher_data/', views.teacher_data, name="teacher_data"),
+    path('teacher_retrieve/', views.teacher_retrieve, name="teacher_retrieve"),
+    path('school_data/', views.school_data, name="school_data"),
+    path('school_retrieve/', views.school_retrieve, name="school_retrieve"),
+    path('schooldata/', views.schooldata, name="schooldata"),
+    path('weekly_income_data/', views.weekly_income_data, name="weekly_income_data"),
+    path('weekly_income_retrieve/', views.weekly_income_retrieve, name="weekly_income_retrieve"),
+    path('monthly_income_data/', views.monthly_income_data, name="monthly_income_data"),
+    path('monthly_income_retrieve/', views.monthly_income_retrieve, name="monthly_income_retrieve"),
+    path('yearly_income_data/', views.yearly_income_data, name="yearly_income_data"),
+    path('yearly_income_retrieve/', views.yearly_income_retrieve, name="yearly_income_retrieve"),
+    path('weeklyincometable/', views.weeklyincometable, name="weeklyincometable"),
+    path('monthlyincome/', views.monthlyincome, name="monthlyincome"),
+    path('yearlyincome/', views.yearlyincome, name="yearlyincome"),
+    path('monthlyincometable/', views.monthlyincometable, name="monthlyincometable"),
+    path('yearlyincometable/', views.yearlyincometable, name="yearlyincometable"),
+]
